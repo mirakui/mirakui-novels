@@ -69,7 +69,7 @@ Copyright (c) 2014 Issei Naruta.
 #{novel_license}
 
 ### Other files
-Files except novels are released under the [MIT License](http://opensource.org/licenses/MIT).
+Files except novels are licensed under the [MIT License](http://opensource.org/licenses/MIT).
   FOOTER
   File.open(dst_path, 'w') {|f| f.write out.to_s }
 end
