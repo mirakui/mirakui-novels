@@ -1,5 +1,9 @@
-require 'pathname'
-NOVEL_DIRECTORIES = %w[water elevator platinum internet]
+require 'yaml'
+require 'erb'
+
+def meta
+  @meta ||= YAML.load(File.read('metadata.yml'))
+end
 
 def convert_txt_to_md(src_path, dst_path)
   dst_txt = File.read src_path
@@ -10,15 +14,20 @@ def convert_txt_to_md(src_path, dst_path)
   File.open(dst_path, 'w') {|f| f.write dst_txt }
 end
 
-desc 'build markdowns'
-task :build do
-  NOVEL_DIRECTORIES.each do |dir|
-    sources = Dir.glob "#{dir}/src/*.txt"
-    sources.each do |src|
-      name = File.basename(src).split('.').first
-      dst = "#{dir}/#{name}.md"
-      puts "converting #{src} -> #{dst}"
-      convert_txt_to_md src, dst
+task build: %w[build:markdown]
+
+namespace :build do
+  desc 'build markdowns'
+  task :markdown do
+    meta['novels'].each do |novel|
+      dir = novel['dir']
+      sources = Dir.glob "#{dir}/src/*.txt"
+      sources.each do |src|
+        name = File.basename(src).split('.').first
+        dst = "#{dir}/#{name}.md"
+        puts "converting #{src} -> #{dst}"
+        convert_txt_to_md src, dst
+      end
     end
   end
 end
