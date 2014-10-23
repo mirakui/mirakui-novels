@@ -27,7 +27,7 @@ class Novel
   end
 
   def github_url
-    "https://github.com/mirakui/mirakui-novels/tree/master/#{@dir}"
+    "https://github.com/mirakui/mirakui-novels/tree/master/#{@dir}/#{@dir}.md"
   end
 
   def source_paths
@@ -48,6 +48,10 @@ class Novel
 # #{title}
 
 #{description}
+
+[この作品を読む](#{github_url})
+
+---
 
 #{license}
   END
