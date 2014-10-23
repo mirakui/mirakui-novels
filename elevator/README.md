@@ -1,6 +1,6 @@
 # 地下に着くまで待って
 
-2009年11月『つヤ部報 vol.2 - 特集「エレベーターアクション」』 収録
+2009年11月『つヤ部報 vol.2 - 特集「六本木エレベーターアクション」』 収録
 
 [この作品を読む](https://github.com/mirakui/mirakui-novels/tree/master/elevator/elevator.md)
 

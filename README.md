@@ -5,7 +5,7 @@ Novels by mirakui
 | title | size | first published |
 | ----- | ---- | --------------- |
 | [水はもう無い](https://github.com/mirakui/mirakui-novels/tree/master/water/water.md) | 4407 字 | 2009年4月『つヤ部報 vol.1 - 特集「リメンバーウォーターサーバー」』 収録 |
-| [地下に着くまで待って](https://github.com/mirakui/mirakui-novels/tree/master/elevator/elevator.md) | 4686 字 | 2009年11月『つヤ部報 vol.2 - 特集「エレベーターアクション」』 収録 |
+| [地下に着くまで待って](https://github.com/mirakui/mirakui-novels/tree/master/elevator/elevator.md) | 4686 字 | 2009年11月『つヤ部報 vol.2 - 特集「六本木エレベーターアクション」』 収録 |
 | [白と金の台](https://github.com/mirakui/mirakui-novels/tree/master/platinum/platinum.md) | 8076 字 | 2010年5月『つヤ部報 vol.3 - 特集「さようなら、六本木。」』 収録 |
 | [インターネットと私](https://github.com/mirakui/mirakui-novels/tree/master/internet/internet.md) | 6207 字 | 2012年4月『季刊まきもと vol.1』 収録 |
 
