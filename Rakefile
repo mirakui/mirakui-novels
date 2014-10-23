@@ -1,5 +1,5 @@
 require 'pathname'
-NOVEL_DIRECTORIES = %w[water elevator]
+NOVEL_DIRECTORIES = %w[water elevator platinum]
 
 def convert_txt_to_md(src_path, dst_path)
   dst_txt = File.read src_path
